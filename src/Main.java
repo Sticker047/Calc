@@ -23,7 +23,7 @@ public class Main {
 //        System.out.println(calc("1 + 2 + 3"));
 
         Scanner scanner = new Scanner(System.in);
-        calc(scanner.next());
+        System.out.println(calc(scanner.nextLine()));
     }
 
 
@@ -34,7 +34,7 @@ public class Main {
             String[] args = input.split("\\+");
             if (args.length == 2) {
                 for (String el : args) {
-                    if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 10) {
+                    if (Integer.parseInt(el) > 10 || Integer.parseInt(el) < 0) {
                         throw new Exception();
                     }
                 }
