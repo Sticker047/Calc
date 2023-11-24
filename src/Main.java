@@ -61,7 +61,7 @@ public class Main {
                         args = args[0].split("/");
                         if (args.length == 2) {
                             for (String el : args) {
-                                if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 10) {
+                                if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 0) {
                                     throw new Exception();
                                 }
                             }
