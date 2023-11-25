@@ -16,7 +16,10 @@ public class Main {
     private static Type type;
 
     public static void main(String[] args) throws Exception {
-//        System.out.println(calc("1 + 4"));
+//        System.out.println(calc("4 + 2"));
+//        System.out.println(calc("4 - 2"));
+//        System.out.println(calc("4 * 2"));
+//        System.out.println(calc("4 / 2"));
 //        System.out.println(calc("VI / III"));
 //        System.out.println(calc("VII * II"));
 //        System.out.println(calc("I + 1"));
@@ -43,7 +46,7 @@ public class Main {
                 args = args[0].split("-");
                 if (args.length == 2) {
                     for (String el : args) {
-                        if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 10) {
+                        if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 0) {
                             throw new Exception();
                         }
                     }
@@ -52,7 +55,7 @@ public class Main {
                     args = args[0].split("\\*");
                     if (args.length == 2) {
                         for (String el : args) {
-                            if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 10) {
+                            if (Integer.parseInt(el) > 10 || Integer.parseInt(el) <= 0) {
                                 throw new Exception();
                             }
                         }
